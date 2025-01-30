@@ -1,0 +1,97 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "login-functionality-check;verify-login-with-valid-credentials",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Verify login with valid credentials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 992499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 4,
+            "name": "User navigate to url",
+            "match": {
+              "location": "src\\test\\steps\\login.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2079061799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "Validate the page title",
+            "match": {
+              "location": "src\\test\\steps\\login.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9724400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "User is on login page",
+            "match": {
+              "location": "src\\test\\steps\\login.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 27908199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "User provide valid username and password",
+            "match": {
+              "location": "src\\test\\steps\\login.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 694601700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "User should able to login successfully",
+            "match": {
+              "location": "src\\test\\steps\\login.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 50827999
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "login-functionality-check",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Login Functionality Check",
+    "tags": [],
+    "uri": "src\\test\\features\\login.feature"
+  }
+]
