@@ -22,3 +22,11 @@ When('User provide valid username and password', async function () {
 Then('User should able to login successfully', async function () {
     await customePages.homepage.verifySuccessfullLogin(pageInfo.page)
 });
+
+When('User provide {string} and {string}', async function (username: string, password: string) {
+    await customePages.loginpage.login(pageInfo.page, username, password)
+});
+
+Then('User shpould able to login message as {string}', async function (message: string) {
+    await customePages.homepage.verifySuccessfullLogin(pageInfo.page, message)
+});

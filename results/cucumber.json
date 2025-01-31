@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 992499
+              "duration": 384846000
             }
           },
           {
@@ -23,11 +23,11 @@
             "line": 4,
             "name": "User navigate to url",
             "match": {
-              "location": "src\\test\\steps\\login.ts:6"
+              "location": "src\\test\\steps\\login-validation.ts:6"
             },
             "result": {
               "status": "passed",
-              "duration": 2079061799
+              "duration": 2029073499
             }
           },
           {
@@ -36,11 +36,11 @@
             "line": 5,
             "name": "Validate the page title",
             "match": {
-              "location": "src\\test\\steps\\login.ts:10"
+              "location": "src\\test\\steps\\login-validation.ts:10"
             },
             "result": {
               "status": "passed",
-              "duration": 9724400
+              "duration": 5019299
             }
           },
           {
@@ -49,11 +49,11 @@
             "line": 8,
             "name": "User is on login page",
             "match": {
-              "location": "src\\test\\steps\\login.ts:14"
+              "location": "src\\test\\steps\\login-validation.ts:14"
             },
             "result": {
               "status": "passed",
-              "duration": 27908199
+              "duration": 23000299
             }
           },
           {
@@ -62,11 +62,11 @@
             "line": 9,
             "name": "User provide valid username and password",
             "match": {
-              "location": "src\\test\\steps\\login.ts:18"
+              "location": "src\\test\\steps\\login-validation.ts:18"
             },
             "result": {
               "status": "passed",
-              "duration": 694601700
+              "duration": 1170530799
             }
           },
           {
@@ -75,11 +75,387 @@
             "line": 10,
             "name": "User should able to login successfully",
             "match": {
-              "location": "src\\test\\steps\\login.ts:22"
+              "location": "src\\test\\steps\\login-validation.ts:22"
             },
             "result": {
               "status": "passed",
-              "duration": 50827999
+              "duration": 55954900
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 104012600
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login-functionality-check;verify-login-with-group-of-credentials",
+        "keyword": "Scenario Outline",
+        "line": 18,
+        "name": "Verify login with group of credentials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 212289499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 4,
+            "name": "User navigate to url",
+            "match": {
+              "location": "src\\test\\steps\\login-validation.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1783380899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "Validate the page title",
+            "match": {
+              "location": "src\\test\\steps\\login-validation.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5136200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 13,
+            "name": "User is on login page",
+            "match": {
+              "location": "src\\test\\steps\\login-validation.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 25532600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "User provide \"mercury\" and \"mercury\"",
+            "match": {
+              "location": "src\\test\\steps\\login-validation.ts:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 920678200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "User shpould able to login message as \"Login Successfully\"",
+            "match": {
+              "location": "src\\test\\steps\\login-validation.ts:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 55779300
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 86954599
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login-functionality-check;verify-login-with-group-of-credentials",
+        "keyword": "Scenario Outline",
+        "line": 19,
+        "name": "Verify login with group of credentials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 199993899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 4,
+            "name": "User navigate to url",
+            "match": {
+              "location": "src\\test\\steps\\login-validation.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2115907499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "Validate the page title",
+            "match": {
+              "location": "src\\test\\steps\\login-validation.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3945900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 13,
+            "name": "User is on login page",
+            "match": {
+              "location": "src\\test\\steps\\login-validation.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 18842500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "User provide \"prudhvi\" and \"prudhvi\"",
+            "match": {
+              "location": "src\\test\\steps\\login-validation.ts:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1270938700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "User shpould able to login message as \"Login Successfully\"",
+            "match": {
+              "location": "src\\test\\steps\\login-validation.ts:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 52030499
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 74753600
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login-functionality-check;verify-login-with-group-of-credentials",
+        "keyword": "Scenario Outline",
+        "line": 20,
+        "name": "Verify login with group of credentials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 181302999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 4,
+            "name": "User navigate to url",
+            "match": {
+              "location": "src\\test\\steps\\login-validation.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2109355700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "Validate the page title",
+            "match": {
+              "location": "src\\test\\steps\\login-validation.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3368200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 13,
+            "name": "User is on login page",
+            "match": {
+              "location": "src\\test\\steps\\login-validation.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 19100399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "User provide \"raj\" and \"raj\"",
+            "match": {
+              "location": "src\\test\\steps\\login-validation.ts:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1296359500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "User shpould able to login message as \"Login Successfully\"",
+            "match": {
+              "location": "src\\test\\steps\\login-validation.ts:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 53959499
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 83844000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login-functionality-check;verify-login-with-group-of-credentials",
+        "keyword": "Scenario Outline",
+        "line": 21,
+        "name": "Verify login with group of credentials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 173138299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 4,
+            "name": "User navigate to url",
+            "match": {
+              "location": "src\\test\\steps\\login-validation.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4243297399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "Validate the page title",
+            "match": {
+              "location": "src\\test\\steps\\login-validation.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4545999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 13,
+            "name": "User is on login page",
+            "match": {
+              "location": "src\\test\\steps\\login-validation.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16598900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "User provide \"bibi\" and \"bibi\"",
+            "match": {
+              "location": "src\\test\\steps\\login-validation.ts:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1253320099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "User shpould able to login message as \"Login Successfully\"",
+            "match": {
+              "location": "src\\test\\steps\\login-validation.ts:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 44343600
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 76320900
             }
           }
         ],

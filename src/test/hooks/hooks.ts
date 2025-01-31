@@ -12,6 +12,8 @@ let browser: Browser, context: BrowserContext, page: Page
 let loginpage: LoginPage
 let homepage: HomePage
 
+let timeZone: string
+
 export const pageInfo = {
     page,context,browser
 }
@@ -22,9 +24,24 @@ export const customePages = {
 
 BeforeAll(async function() {
     browser = await setBrowser(process.env.BrowserName, process.env.HeadMode)
+    customePages.loginpage = new LoginPage()
+    customePages.homepage = new HomePage()
+})
+
+Before(async ()=>{
     context = await browser.newContext()
     await context.tracing.start({screenshots: false, snapshots: true})
     page = await context.newPage()
+
+    pageInfo.page = page
+    pageInfo.browser = browser
+    pageInfo.context = context
+})
+
+After(async ()=>{
+    await page.close()
+    timeZone = Date().toString().replaceAll(" ", "_").replaceAll(":", "-")
+    await context.tracing.stop({path: `./trace-results/${timeZone}-trace.zip`})
 })
 
 async function setBrowser(str: string, mode: string){
@@ -36,19 +53,6 @@ async function setBrowser(str: string, mode: string){
     return browser
 }
 
-Before(async function () {
-    pageInfo.page = page
-    pageInfo.browser = browser
-    pageInfo.context = context
-
-    customePages.loginpage = new LoginPage()
-    customePages.homepage = new HomePage()
-
-})
-
-
 AfterAll(async function () {
-    await page.close()
-    await context.tracing.stop({path: "./trace-results/trace.zip"})
     await browser.close()
 })
